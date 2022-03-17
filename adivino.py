@@ -1,5 +1,5 @@
 import random
-numero_aleatorio = random.randrange(0,10)
+numero_aleatorio = random.randrange(0,100)
 gane = False
 print("Tenes 5 intentos para adivinar un entre 0 y 100")
 intento = 1
