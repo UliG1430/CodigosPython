@@ -1,0 +1,18 @@
+#Ingresar las notas
+import statistics
+
+nota = int(input("Ingresá una nota (-1 para finalizar)"))
+lista_de_notas = []
+while nota != -1:
+    lista_de_notas.append(nota)
+    nota = int(input("Ingresá una nota (-1 para finalizar)"))
+lista_de_notas
+#promedio= statistics.mean(lista_de_notas)
+#otra forma de calcular promedio sin librerias
+promedio=sum(lista_de_notas)/len(lista_de_notas)
+menores=0
+print ('El promedio de notas es de '+str(promedio))
+for i in lista_de_notas:
+    if (i<promedio):
+        menores+=1
+print ('La cantidad de notas menores al promedio es de '+str(menores))

@@ -1,0 +1,16 @@
+palabra= str (input('Ingrese una palabra: '))
+lista=[]
+cumplen=[]
+while palabra != 'FIN':
+    lista.append(palabra)
+    palabra= str (input('Ingrese una palabra: '))
+
+for i in lista:
+    if i[0].lower()==i[len(i)-1].lower():
+        cumplen.append(i)
+
+if cumplen:
+    print ("Las palabras que inician y terminan con la misma letra son: {}".format(cumplen))
+else:
+    print ("No hay palabras que inicien y terminen con la misma letra")
+    
